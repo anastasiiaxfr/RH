@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_soc_socs",
+  "info": {
+    "displayName": "soc",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "network": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
