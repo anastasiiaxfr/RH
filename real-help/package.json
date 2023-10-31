@@ -9,21 +9,21 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@strapi/plugin-graphql": "4.15.0",
+    "@_sh/strapi-plugin-ckeditor": "^2.0.4",
+    "@strapi/plugin-graphql": "^4.15.0",
     "@strapi/plugin-i18n": "4.15.0",
     "@strapi/plugin-users-permissions": "4.15.0",
     "@strapi/provider-upload-cloudinary": "^4.15.0",
     "@strapi/strapi": "4.15.0",
     "better-sqlite3": "8.6.0",
-    "strapi-plugin-menus": "^1.5.0"
+    "strapi-plugin-slugify": "^2.3.6"
   },
   "author": {
-    "name": "anastasiia_berest"
+    "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "6b8eec22-a583-4331-b5cf-b0a1fedda07b"
+    "uuid": "0f5efe1a-16e1-459b-9c56-9e23647e63f4"
   },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",

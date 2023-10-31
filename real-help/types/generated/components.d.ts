@@ -7,8 +7,8 @@ export interface SocSoc extends Schema.Component {
     icon: 'crown';
   };
   attributes: {
-    network: Attribute.String;
     url: Attribute.String;
+    socials: Attribute.String;
   };
 }
 

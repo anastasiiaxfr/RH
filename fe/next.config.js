@@ -8,7 +8,10 @@ const nextConfig = {
         includePaths: [path.join(__dirname, 'styles')],
     },
     basePath: '',
-    env: {},
+    env: {
+        NEXT_API_URL: process.env.NEXT_API_URL,
+        NEXT_SITE_URL: process.env.NEXT_SITE_URL,
+    },
     images: {
         domains: [''],
     },

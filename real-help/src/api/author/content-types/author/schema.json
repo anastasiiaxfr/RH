@@ -32,38 +32,35 @@
         }
       }
     },
-    "socials": {
-      "displayName": "soc",
-      "type": "component",
-      "repeatable": true,
-      "component": "soc.soc",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "post": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::post.post",
-      "inversedBy": "authors"
-    },
     "ava": {
       "type": "media",
       "multiple": false,
       "required": false,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ],
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
       }
+    },
+    "network": {
+      "displayName": "soc",
+      "type": "component",
+      "repeatable": true,
+      "component": "soc.soc",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::post.post",
+      "mappedBy": "authors"
     }
   }
 }

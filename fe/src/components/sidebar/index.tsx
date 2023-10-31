@@ -5,16 +5,18 @@ import { Flex, Hide, Link } from '@chakra-ui/react';
 
 export default function Sidebar() {
     return (
-        <Flex
-            padding="24px"
-            flexDirection="column"
-            gap="16px"
-        >
-            <Hide below="sm">
+        <Hide below="sm">
+            <Flex
+                padding="24px"
+                flexDirection="column"
+                gap="16px"
+                as="aside"
+            >
+
                 <Link
                     as={NextLink}
                     href="/"
-                    color="gray.300"
+                    color="gray.400"
                 >
                     All Posts
                 </Link>
@@ -22,11 +24,12 @@ export default function Sidebar() {
                 <Link
                     as={NextLink}
                     href="/posts-create"
-                    color="gray.300"
+                    color="gray.400"
                 >
                     Create Posts
                 </Link>
-            </Hide>
-        </Flex>
+
+            </Flex>
+        </Hide>
     );
 }

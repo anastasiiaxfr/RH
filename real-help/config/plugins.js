@@ -9,22 +9,17 @@ module.exports = ({ env }) => ({
       },
       actionOptions: {
         upload: {},
-        uploadStream: {},
         delete: {},
       },
     },
   },
-  graphql: {
+  menus: {
     config: {
-      endpoint: "/graphql",
-      shadowCRUD: true,
-      playgroundAlways: false,
-      depthLimit: 7,
-      amountLimit: 100,
-      apolloServer: {
-        tracing: false,
-      },
+      maxDepth: 3,
     },
+  },
+  ckeditor5: {
+    enabled: true,
   },
   slugify: {
     enabled: true,
@@ -36,13 +31,5 @@ module.exports = ({ env }) => ({
         },
       },
     },
-  },
-  menus: {
-    config: {
-      maxDepth: 3,
-    },
-  },
-  seo: {
-    enabled: true,
   },
 });

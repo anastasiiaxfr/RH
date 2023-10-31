@@ -1,22 +1,14 @@
 import React from 'react';
+import Drawer from '../drawer';
+
 import {
     Flex,
     Container,
     useColorModeValue,
-    Drawer,
-    DrawerBody,
-    DrawerHeader,
-    DrawerOverlay,
-    DrawerContent,
-    DrawerCloseButton,
-    Button,
-    useDisclosure,
-    Show,
 } from '@chakra-ui/react';
+
 export default function Header() {
-    const { isOpen, onOpen, onClose } = useDisclosure();
-    const placement = 'left';
-    const bg = useColorModeValue('gray.100', 'gray.800');
+    const bg = useColorModeValue('whiteAlpha.900', 'darkHighlight');
 
     return (
         <Flex
@@ -24,6 +16,8 @@ export default function Header() {
             position="sticky"
             top="0"
             bg={bg}
+            shadow="sm"
+            zIndex="100500"
         >
             <Container
                 display="flex"
@@ -32,33 +26,7 @@ export default function Header() {
                 flexWrap="wrap"
                 padding="10px"
             >
-                <Show below="sm">
-                    <Button
-                        colorScheme="blue"
-                        onClick={onOpen}
-                    >
-                        Open
-                    </Button>
-                </Show>
-                <Drawer
-                    placement={placement}
-                    onClose={onClose}
-                    isOpen={isOpen}
-                >
-                    <DrawerOverlay />
-                    <DrawerContent>
-                        <DrawerCloseButton />
-                        <DrawerHeader borderBottomWidth="1px">
-                            Basic Drawer
-                        </DrawerHeader>
-                        <DrawerBody>
-                            <p>Some contents...</p>
-                            <p>Some contents...</p>
-                            <p>Some contents...</p>
-                        </DrawerBody>
-                    </DrawerContent>
-                </Drawer>
-
+                <Drawer />
                 <div>Header</div>
             </Container>
         </Flex>

@@ -15,8 +15,8 @@ export default function App({ Component, pageProps }: any) {
                 >
                     <Flex
                         display={{ sm: 'block', base: 'none' }}
-                        bg="gray.900"
-                        color="white"
+                        bg="gray.100"
+                        color="gray.400"
                     >
                         <Sidebar />
                     </Flex>

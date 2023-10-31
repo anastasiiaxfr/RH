@@ -6,10 +6,10 @@
   },
   "options": {},
   "attributes": {
-    "network": {
+    "url": {
       "type": "string"
     },
-    "url": {
+    "socials": {
       "type": "string"
     }
   }
