@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories_of_peoples",
+  "info": {
+    "singularName": "categories-of-people",
+    "pluralName": "categories-of-peoples",
+    "displayName": "Categories_of_People",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "На модерацію",
+        "На видалення",
+        "Архів"
+      ]
+    }
+  }
+}

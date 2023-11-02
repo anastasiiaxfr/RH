@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tematichniy_zbirs",
+  "info": {
+    "singularName": "tematichniy-zbir",
+    "pluralName": "tematichniy-zbirs",
+    "displayName": "Tematichniy_zbir"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fond_name": {
+      "type": "string"
+    },
+    "sum": {
+      "type": "decimal"
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "uah",
+        "eur",
+        "usd"
+      ]
+    },
+    "goal": {
+      "type": "text"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "files": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "uid": {
+      "type": "uid"
+    }
+  }
+}

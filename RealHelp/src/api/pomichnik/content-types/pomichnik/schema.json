@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pomichniks",
+  "info": {
+    "singularName": "pomichnik",
+    "pluralName": "pomichniks",
+    "displayName": "Pomichnik",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "date": {
+      "type": "date"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "registered",
+        "no registered"
+      ]
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "uid": {
+      "type": "uid"
+    },
+    "person": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::people.people",
+      "inversedBy": "pomichniks"
+    },
+    "work_expirience": {
+      "type": "string"
+    },
+    "second_name": {
+      "type": "string"
+    }
+  }
+}

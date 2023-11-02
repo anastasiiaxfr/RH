@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "fd25831f-5771-4716-a285-c2586493bcec",
+		"name": "strapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26203737"
+	},
+	"item": [
+		{
+			"name": "https://strapi-next-2-production.up.railway.app/api/posts/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://strapi-next-2-production.up.railway.app/api/posts/1",
+					"protocol": "https",
+					"host": [
+						"strapi-next-2-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://strapi-next-2-production.up.railway.app/api/posts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": {\r\n    \"title\": \"New Post Title\",\r\n    \"description\": \"New Post Description\",\r\n    \"content\": \"New Post Content\",\r\n    \"slug\": \"slug-9\",\r\n    \"thumbnail\": {\r\n      \"name\": \"test\"\r\n    },\r\n    \"authors\": [1],\r\n    \"categories\": [2]\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://strapi-next-2-production.up.railway.app/api/posts",
+					"protocol": "https",
+					"host": [
+						"strapi-next-2-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://strapi-next-2-production.up.railway.app/api/posts/24",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"data\": {\r\n    \"title\": \"Update Post Title\",\r\n    \"description\": \"Update Post Description\",\r\n    \"content\": \"Update Post Content\",\r\n    \"authors\": [1],\r\n    \"categories\": [1]\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://strapi-next-2-production.up.railway.app/api/posts/24",
+					"protocol": "https",
+					"host": [
+						"strapi-next-2-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"api",
+						"posts",
+						"24"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

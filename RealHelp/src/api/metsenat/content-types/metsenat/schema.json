@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "metsenats",
+  "info": {
+    "singularName": "metsenat",
+    "pluralName": "metsenats",
+    "displayName": "Metsenat",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "birthday": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "status1",
+        "status2",
+        "status3"
+      ]
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "enabled": {
+      "type": "boolean"
+    }
+  }
+}
