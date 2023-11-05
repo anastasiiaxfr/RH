@@ -1,0 +1,6 @@
+- Sign Up/In with JWT Strapi API
+- CRUD Strapi API
+- seacrh / filters
+- pagination / bredcrumbs
+- lang / theme witcher
+- 404 / preloader
